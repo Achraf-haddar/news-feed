@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Search from "./pages/Search/Search";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { ThemeProvider, CssB } from '@emotion/react';
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import { useState } from "react";
+import { darkTheme, lightTheme } from "./theme";
+import Feed from "./pages/Feed/Feed";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prev) => !prev);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+      <CssBaseline />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/search"
+            element={
+              <Search toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+            }
+          />
+          <Route
+            path="/feed"
+            element={
+              <Feed toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

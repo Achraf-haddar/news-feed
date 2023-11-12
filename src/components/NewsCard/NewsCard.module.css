@@ -1,0 +1,48 @@
+.cardContent {
+  flex: 1 auto;
+}
+
+.content {
+  white-space: pre-wrap;
+  overflow-x: hidden;
+}
+
+.cardContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cardContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+.cardContent::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.cardContent::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.card {
+  min-width: 275px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardMedia {
+  height: 180px;
+  min-height: 200px;
+  /* object-fit: cover; */
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 12px;
+}

@@ -1,0 +1,47 @@
+.container {
+  margin-top: 20px;
+}
+
+.searchField {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.loading {
+  margin-left: 10px;
+}
+
+.filterContainer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.newsPagination {
+  margin-bottom: 25px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchButton {
+  width: '10px';
+}
+
+.loading {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
