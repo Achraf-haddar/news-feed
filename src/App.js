@@ -1,5 +1,5 @@
 import Search from "./pages/Search/Search";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 // import { ThemeProvider, CssB } from '@emotion/react';
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { useState } from "react";
@@ -30,6 +30,7 @@ function App() {
               <Feed toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
             }
           />
+          <Route path="*" element={<Navigate to="/feed" replace />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

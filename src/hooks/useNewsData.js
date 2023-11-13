@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getNews } from "../services/NewsAPI";
+import { getNews } from "../services/api";
 
 export default function useNewsData(keyword) {
   const [news, setNews] = useState([]);

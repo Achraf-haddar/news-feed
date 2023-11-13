@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# News Feed Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Proposed Solution:
+I have implemented a news aggregator solution that incorporates two distinct interfaces: /feed and /search. These interfaces offer an intuitive and user-friendly experience for accessing news content. To retrieve the news, I have mainly used three api: "NewsAPI", "The Guardian", and "New York Times".
 
-## Available Scripts
+### /feed Interface:
+This interface provides a curated feed of news content, complete with dynamic filters for authors, sources, and categories. Users can easily customize their news feed based on their preferences, enhancing their overall browsing experience.
 
-In the project directory, you can run:
+### /search interface:
+This interface empowers users to perform targeted searches using specific keyword. Users can further refine their findings through filters such as source, category, and publication date (from date, to date). This ensures that users can quickly locate the information they need.
 
-### `npm start`
+Both interfaces present a grid layout showcasing news cards with a pagination for seamless navigation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Each news card contains:
+* Thumbnail image: takes a "no-image" image for news retrieved from New York Times Api.
+* Title.
+* Author: takes "Unknown Author" for news retrieved from the Guardian Api or if its not provided in the New York Times Api result as well. 
+* Category: takes "Unknown Category" for news retrieved from NewsApi. 
+* Source. 
+* Publication date. 
+* A small content description. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The user can learn more about a specific news by clicking on "Learn More" which redirects to the article's page.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Some Screenshots:
+![alt Feed Interface](./screenshots/Feed Interface.PNG "Feed Interface")
 
-### `npm run build`
+![alt Search Interface](./screenshots/Search Interface.PNG "Search Interface")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![alt Light Theme](./screenshots/Light Theme.PNG "Light Theme")
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![alt Pagination](./screenshots/Pagination.PNG "Pagination")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to run:
+1. Clone the repo using `git clone https://github.com/Achraf-haddar/news-feed.git`
+2. Inside the news-feed folder run the following commands:
+   `docker build -t news-feed-app .`
+   `docker run -p 3000:3000 news-feed-app`
+3. Try it by calling [http://localhost:3000/feed](http://localhost:3000/feed)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Happy Reviewing 🎉

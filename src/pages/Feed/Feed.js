@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HeaderMenu from "../../components/HeaderMenu/HeaderMenu";
-import { getNews } from "../../services/NewsAPI";
+import { getNews } from "../../services/api";
 import Filter from "../../components/Filter/Filter";
 import NewsPagination from "../../components/NewsPagination/NewsPagination";
 import { CircularProgress } from "@mui/material";
