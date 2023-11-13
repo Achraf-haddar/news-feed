@@ -30,7 +30,7 @@ The user can learn more about a specific news by clicking on "Learn More" which 
 
 ![alt Light Theme](./screenshots/lightTheme.PNG "Light Theme")
 
-![alt Pagination](./screenshots/pagination.PNG "Pagination")
+![alt Pagination](./screenshots/Pagination.PNG "Pagination")
 
 ## How to run:
 1. Clone the repo using `git clone https://github.com/Achraf-haddar/news-feed.git`
