@@ -24,13 +24,13 @@ The user can learn more about a specific news by clicking on "Learn More" which 
 
 
 ## Some Screenshots:
-![alt Feed Interface](./screenshots/Feed Interface.PNG "Feed Interface")
+![alt Feed Interface](./screenshots/feedInterface.PNG "Feed Interface")
 
-![alt Search Interface](./screenshots/Search Interface.PNG "Search Interface")
+![alt Search Interface](./screenshots/searchInterface.PNG "Search Interface")
 
-![alt Light Theme](./screenshots/Light Theme.PNG "Light Theme")
+![alt Light Theme](./screenshots/lightTheme.PNG "Light Theme")
 
-![alt Pagination](./screenshots/Pagination.PNG "Pagination")
+![alt Pagination](./screenshots/pagination.PNG "Pagination")
 
 ## How to run:
 1. Clone the repo using `git clone https://github.com/Achraf-haddar/news-feed.git`
