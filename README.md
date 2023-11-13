@@ -36,6 +36,7 @@ The user can learn more about a specific news by clicking on "Learn More" which 
 1. Clone the repo using `git clone https://github.com/Achraf-haddar/news-feed.git`
 2. Inside the news-feed folder run the following commands:
    `docker build -t news-feed-app .`
+   
    `docker run -p 3000:3000 news-feed-app`
 3. Try it by calling [http://localhost:3000/feed](http://localhost:3000/feed)
 
